@@ -6,7 +6,19 @@
     <title>ZAXXUN ROBOT CAFE</title>
 
     <!-- link our css file -->
-    <link rel="stylesheet" type="textt/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<?php
+//Get Heroku ClearDB connection information
+$cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+$cleardb_server = $cleardb_url["host"];
+$cleardb_username = $cleardb_url["user"];
+$cleardb_password = $cleardb_url["pass"];
+$cleardb_db = substr($cleardb_url["path"],1);
+$active_group = 'default';
+$query_builder = TRUE;
+// Connect to DB
+$conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
+
 </head>
 <body>
     <!-- Navbar Section Starts Here -->
@@ -19,7 +31,7 @@
             <div class="menu text-right">
                 <ul>
                     <li>
-                        <a href="<?php echo SITEURL; ?>">Home</a>
+                        <a href="indexwelcome.php">Home</a>
                     </li>
                     <li>
                         <a href="<?php echo SITEURL; ?>categories.php">Categories</a>
@@ -220,6 +232,7 @@
         </div>
     </section>
     <!-- Footer Search Section Ends Here -->
+	?>
 </body>
 </html>
 
