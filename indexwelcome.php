@@ -109,7 +109,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
 
 							?>
 
-							<img src="<?php echo SITEURL; ?>img/category/<?php echo $image_name; ?>" alt="Carbonara" class="img-responsive img-curve">
+							<img src="img/category/<?php echo $image_name; ?>" alt="Carbonara" class="img-responsive img-curve">
 
 							<?php
 							}
