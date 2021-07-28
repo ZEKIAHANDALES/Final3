@@ -1,5 +1,27 @@
-<?php include('partials/menu.php');?>
 
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>zaxuun admin</title>
+    <link rel="stylesheet" type="text/css" href="../css/admin.css">
+</head>
+<body>
+    <!--menu section starts-->
+    <div class="menu text-center">
+        <div class="wrapper">
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="manage-admin.php">Admin</a></li>
+                <li><a href="manage-category.php">Category</a></li>
+                <li><a href="manage-food.php">Food</a></li>
+                <li><a href="manage-order.php">Order</a></li>
+                <li><a href="logout.php">Log Out</a></li>
+            </ul>
+        </div>
+        
+    </div>
+    <!--menu section ends-->
 
 <div class="main-content">
     <div class="wrapper">
@@ -53,7 +75,14 @@
     </div>
 </div>
 
-<?php include('partials/footer.php');?>
+
+    <!--footer sec starts-->
+    <div class="footer">
+        <div class="menu">
+        <div class="wrapper">
+        <p class="text-center">2021 All rights reserved.</p>
+        </div>
+    </div>
 
 <?php 
     //process value form and save it to database
@@ -87,16 +116,18 @@
             //session var to disp message
             $_SESSION['add'] = "Admin added successfully";
             //redirect to MAdmin
-            header("location:".SITEURL.'admin/manage-admin.php');
+            header('admin/manage-admin.php');
         }
         else
         {
             $_SESSION['add'] = "Failed to add admin";
             //redirect to addAdmin
-            header("location:".SITEURL.'admin/add-admin.php');
+            header('admin/add-admin.php');
             
         }
 
 
             }
 ?>
+    </body>
+</html>
