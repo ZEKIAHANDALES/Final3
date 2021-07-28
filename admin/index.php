@@ -1,3 +1,4 @@
+<?php
 <?php 
 
     //session needed to be changed if deploying online for this is from local database
@@ -17,6 +18,7 @@ $query_builder = TRUE;
 // Connect to DB
 $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
 ?>
+
 <?php 
 
     //auth access control
@@ -25,9 +27,8 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
 
         $_SESSION['no-login-message'] = "<div class='error text-center'> Please Login to access </div>";
         header('admin/login.php');
-
     }
-
+?>
 ?>
 
 <html>
