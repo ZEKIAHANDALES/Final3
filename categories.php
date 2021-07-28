@@ -1,5 +1,4 @@
 <?php 
-<?php 
 
     //session needed to be changed if deploying online for this is from local database
     session_start();
