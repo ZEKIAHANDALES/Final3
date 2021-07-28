@@ -1,6 +1,8 @@
-<?php 
-
- //session needed to be changed if deploying online for this is from local database
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<?php
+//session needed to be changed if deploying online for this is from local database
     session_start();
     
  //Get Heroku ClearDB connection information
@@ -14,10 +16,6 @@ $query_builder = TRUE;
 // Connect to DB
 $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
 
-
-<!DOCTYPE html>
-<html lang = "en">
-<head>
     <meta charset="utf-8">
     <meta name = "viewport" content="width=device-width, initial-scale=1.0">
     <title>ZAXXUN ROBOT CAFE</title>
