@@ -21,7 +21,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
 <html>
 <head>
     <title>Zaxxun Login</title>
-    <link rel="stylesheet" href="../css/admin.css">
+    <link rel="stylesheet" type="text/css" href="../css/admin.css">
 </head>
 <body>
 
@@ -85,13 +85,13 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
             $_SESSION['login'] = "<div class='success'>Login Successful.</div>";
             $_SESSION['user'] = $username;
 
-            header('admin/');
+            header("admin/");
 
         }
         else
         {
             $_SESSION['login'] = "<div class='error'>User could not be found.</div>";
-            header('admin/login.php');
+            header("admin/login.php");
         }
 
     }
