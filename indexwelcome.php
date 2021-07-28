@@ -6,7 +6,7 @@
     <title>ZAXXUN ROBOT CAFE</title>
 
     <!-- link our css file -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="textt/css" href="css/style.css">
 </head>
 <body>
     <!-- Navbar Section Starts Here -->
