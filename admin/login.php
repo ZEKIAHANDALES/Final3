@@ -62,9 +62,6 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
         <p class="text-center">All Rights Reserved.</p>
     </div>
 
-</body>
-</html>
-
 <!-- Method Here -->
 
 <?php 
@@ -96,3 +93,5 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
 
     }
 ?>
+</body>
+</html>
