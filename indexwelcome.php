@@ -235,7 +235,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
         </div>
     </section>
     <!-- Footer Search Section Ends Here -->
-
+?>
 </body>
 </html>
-?>
+
