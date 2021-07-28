@@ -83,13 +83,13 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
             $_SESSION['login'] = "<div class='success'>Login Successful.</div>";
             $_SESSION['user'] = $username;
 
-            header('location:''admin/');
+            header('location: admin/');
 
         }
         else
         {
             $_SESSION['login'] = "<div class='error'>User could not be found.</div>";
-            header('location:''admin/login.php');
+            header('location: admin/login.php');
         }
 
     }
