@@ -100,7 +100,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                                     </p>
                                     <br>
 
-                                    <a href="<?php echo SITEURL; ?>order.php?food_id=<?php echo $id; ?>" class="btn btn-primary">Order</a>
+                                    <a href="order.php?food_id=<?php echo $id; ?>" class="btn btn-primary">Order</a>
                                 </div>
                             </div>
 
