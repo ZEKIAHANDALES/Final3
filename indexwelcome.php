@@ -35,11 +35,11 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                         <a href="indexwelcome.php">Home</a>
                     </li>
                     <li>
-                        <a href="<?php echo SITEURL; ?>categories.php">Categories</a>
+                        <a href="categories.php">Categories</a>
                     </li>
 
                     <li>
-                        <a href="<?php echo SITEURL; ?>foods.php">Featured</a>
+                        <a href="foods.php">Featured</a>
                     </li>
 
                 </ul>       
@@ -53,7 +53,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
 	<section class="food-search text-center">
 		<div class="container">
 
-			<form action="<?php echo SITEURL; ?>food-search.php" method="POST">
+			<form action="food-search.php" method="POST">
 				<input type="search" name="search" placeholder="Search for Food..." required>
 				<input type="submit" name="submit" value="search" class="btn btn-primary">
 			</form>
@@ -95,7 +95,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
 					$image_name = $row['image_name'];
 				?>
 
-				<a href="<?php echo SITEURL; ?>category-foods.php?category_id=<?php echo $id; ?>">
+				<a href="category-foods.php?category_id=<?php echo $id; ?>">
 					<div class="box-3 float-container">
 
 						<?php 
@@ -171,7 +171,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
 				else
 				{
 					?>
-					<img src="<?php echo SITEURL; ?>img/food/<?php echo $image_name; ?>" class="img-responsive img-curve">
+					<img src="img/food/<?php echo $image_name; ?>" class="img-responsive img-curve">
 					<?php 
 				}
 
@@ -186,7 +186,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
 				</p>
 				<br>
 
-				<a href="<?php echo SITEURL; ?>order.php?food_id=<?php echo $id; ?>" class="btn btn-primary">Order</a>
+				<a href="order.php?food_id=<?php echo $id; ?>" class="btn btn-primary">Order</a>
 			</div>
 		</div>
 
