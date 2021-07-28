@@ -83,7 +83,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
             $_SESSION['login'] = "<div class='success'>Login Successful.</div>";
             $_SESSION['user'] = $username;
 
-            header('location: admin/');
+            header('location: admin/index.php');
 
         }
         else
