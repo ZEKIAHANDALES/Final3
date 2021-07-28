@@ -1,0 +1,145 @@
+/*
+	Author: Jhon Barja and Lyra Chua;
+	Theme:  Ordering menu Website;
+	version:  1.0;
+*/
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper{
+	padding: 1%;
+	width: 80% ;
+	margin: 0 auto;
+}
+
+.text-center{
+	text-align: center;
+}
+
+.clearfix{
+	float: none;
+	clear: both;
+}
+
+.tbl-full{
+	width: 100%;
+}
+
+.tbl-30{
+	width: 30%;
+}
+
+table tr th{
+	border-bottom: 1px solid;
+	padding: 1%;
+	text-align: left;
+}
+
+table tr td{
+	padding: 1%;
+}
+
+.btn-primary{
+	background-color: blueviolet;
+	padding: 1%;
+	color: whitesmoke;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.btn-primary:hover{
+	background-color: green;
+}
+
+.btn-secondary{
+	background-color: green;
+	padding: 1%;
+	color: whitesmoke;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.btn-secondary:hover{
+	background-color: yellow;
+}
+
+.btn-danger{
+	background-color: red;
+	padding: 1%;
+	color: whitesmoke;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.btn-danger:hover{
+	background-color: orange;
+}
+
+.success{
+	color: green;
+}
+
+.error{
+	color: red;
+}
+
+/* css menu */
+
+.menu {
+	border-bottom: 1px solid;
+}
+
+}
+.menu ul{
+	list-style-type:none ;
+}
+.menu ul li{
+	display: inline;
+	padding: 1%;
+}
+
+.menu ul li a{
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+
+.menu ul li a:hover{
+	color:  green;
+}
+
+/* css main C. */
+
+.main-content {
+	background-color: lightgrey;
+	padding-top: 3%;
+}
+
+.col-4{
+	width: 16%;
+	background-color: white;
+	margin:  2%;
+	padding: 2%;
+	float: left;
+}
+
+/* css footer */
+
+.footer{
+	background-color: green;
+	color: white;
+}
+
+/* css login */
+
+.login{
+	border: solid black;
+	width: 20%;
+	margin: 10% auto;
+	padding: 2% auto;
+	
+}
