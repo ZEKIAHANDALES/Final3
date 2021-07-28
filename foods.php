@@ -1,11 +1,29 @@
-<?php include('partials-front/menu.php') ?>
+<?php 
+
+    //session needed to be changed if deploying online for this is from local database
+    session_start();
+    
+        //create cnstnts to store non repeating values
+      
+//Get Heroku ClearDB connection information
+//Get Heroku ClearDB connection information
+$cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+$cleardb_server = $cleardb_url["host"];
+$cleardb_username = $cleardb_url["user"];
+$cleardb_password = $cleardb_url["pass"];
+$cleardb_db = substr($cleardb_url["path"],1);
+$active_group = 'default';
+$query_builder = TRUE;
+// Connect to DB
+$conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
+?>
     <!-- Navbar Section Ends Here -->
 
     <!-- fOOD sEARCH Section Starts Here -->
     <section class="food-search text-center">
         <div class="container">
             
-            <form action="<?php echo SITEURL; ?>food-search.php" method="POST">
+            <form action="food-search.php" method="POST">
                 <input type="search" name="search" placeholder="Search for Food.." required>
                 <input type="submit" name="submit" value="Search" class="btn btn-primary">
             </form>
@@ -51,7 +69,7 @@
                     {
                         ?>
 
-                            <img src="<?php echo SITEURL; ?>img/food/<?php echo $image_name; ?>" class="img-responsive img-curve">
+                            <img src="img/food/<?php echo $image_name; ?>" class="img-responsive img-curve">
 
                         <?php
                     }
@@ -66,7 +84,7 @@
                     <p class="food-detail"><?php echo $description; ?></p>
 
                     <br>
-                    <a href="<?php echo SITEURL; ?>order.php?food_id=<?php echo $id; ?>" class="btn btn-primary"> Order </a>
+                    <a href="order.php?food_id=<?php echo $id; ?>" class="btn btn-primary"> Order </a>
                 </div>
             </div>
 
@@ -89,4 +107,4 @@
     <!-- Food Menu Section Ends Here -->
 
     <!-- Footer Here -->
-    <?php include('partials-front/footer.php') ?>
+ ?>
