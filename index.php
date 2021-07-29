@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 	<html>
 	<head>
+		<title>ZAXXUN ROBOT CAFE</title>
 		<meta charset="utf-8">
 		<title></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
