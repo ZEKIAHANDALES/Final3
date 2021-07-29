@@ -1,7 +1,5 @@
 <?php 
 
-   <?php 
-
     //session needed to be changed if deploying online for this is from local database
     session_start();
     
@@ -18,7 +16,17 @@ $active_group = 'default';
 $query_builder = TRUE;
 // Connect to DB
 $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
-?>
+
+
+    //auth access control
+    if(!isset($_SESSION['user']))
+    {
+
+        $_SESSION['no-login-message'] = "<div class='error text-center'> Please Login to access </div>";
+        header('location: login.php');
+
+    }
+
     
     if (isset($_GET['id']) AND isset($_GET['image_name'])) 
     {
@@ -35,7 +43,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
             {
                 $_SESSION['remove'] = "<div class='error'>Failed to remove category Image </div>";  
 
-                header('admin/manage-category.php'); 
+                header('location: manage-category.php'); 
                 die();
 
             }
@@ -51,14 +59,14 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
         {
 
             $_SESSION['delete'] = "<div class='success'>Category deleted successfully </div>";
-            header('admin/manage-category.php');
+            header('location: manage-category.php');
             
         }
         else
         {
 
             $_SESSION['delete'] = "<div class='error'>Failed to delete category </div>";
-            header('admin/manage-category.php');
+            header('location: manage-category.php');
 
         }
 
@@ -66,7 +74,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
 
     else
     {
-        header('admin/manage-category.php');
+        header('location: manage-category.php');
 
     }
     
