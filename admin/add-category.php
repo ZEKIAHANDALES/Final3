@@ -54,19 +54,6 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
     </div>
     <!--menu section ends-->
 
-<?php 
-
-    //auth access control
-    if(!isset($_SESSION['user']))
-    {
-
-        $_SESSION['no-login-message'] = "<div class='error text-center'> Please Login to access </div>";
-        header('location: login.php');
-
-    }
-
-?>
-
 <div class="main-content">
     <div class="wrapper">
         
