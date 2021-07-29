@@ -1,4 +1,58 @@
-<?php include('partials/menu.php');?>
+<?php 
+
+    //session needed to be changed if deploying online for this is from local database
+    session_start();
+    
+        //create cnstnts to store non repeating values
+      
+//Get Heroku ClearDB connection information
+//Get Heroku ClearDB connection information
+$cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+$cleardb_server = $cleardb_url["host"];
+$cleardb_username = $cleardb_url["user"];
+$cleardb_password = $cleardb_url["pass"];
+$cleardb_db = substr($cleardb_url["path"],1);
+$active_group = 'default';
+$query_builder = TRUE;
+// Connect to DB
+$conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
+?>
+
+<?php 
+
+    //auth access control
+    if(!isset($_SESSION['user']))
+    {
+
+        $_SESSION['no-login-message'] = "<div class='error text-center'> Please Login to access </div>";
+        header('location: login.php');
+
+    }
+
+?>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>zaxuun admin</title>
+    <link rel="stylesheet" type="text/css" href="../css/admin.css">
+</head>
+<body>
+    <!--menu section starts-->
+    <div class="menu text-center">
+        <div class="wrapper">
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="manage-admin.php">Admin</a></li>
+                <li><a href="manage-category.php">Category</a></li>
+                <li><a href="manage-food.php">Food</a></li>
+                <li><a href="manage-order.php">Order</a></li>
+                <li><a href="logout.php">Log Out</a></li>
+            </ul>
+        </div>
+        
+    </div>
+    <!--menu section ends-->
 
 <div class="main-content">
     <div class="wrapper">
@@ -47,7 +101,7 @@
 
         <br><br>
 
-         <a href="<?php echo SITEURL; ?>admin/add-category.php" class="btn-primary">Add Category </a>
+         <a href="admin/add-category.php" class="btn-primary">Add Category </a>
                 <table class="tbl-full">
 
                 <br/><br/><br>
@@ -98,7 +152,7 @@
                                         
                                         ?>
 
-                                        <img src="<?php echo SITEURL; ?>img/category/<?php echo $image_name; ?>" width="100px">
+                                        <img src="img/category/<?php echo $image_name; ?>" width="100px">
 
                                         <?php
 
@@ -119,8 +173,8 @@
                                 <td><?php echo $active; ?></td>
 
                                 <td>
-                                    <a href="<?php echo SITEURL; ?>admin/update-category.php?id=<?php echo $id; ?>"class="btn-secondary">Update Category</a>
-                                    <a href="<?php echo SITEURL; ?>admin/delete-category.php?id=<?php echo $id; ?>&image_name=<?php echo $image_name; ?>" class="btn-danger">Delete Category</a>
+                                    <a href="admin/update-category.php?id=<?php echo $id; ?>"class="btn-secondary">Update Category</a>
+                                    <a href="admin/delete-category.php?id=<?php echo $id; ?>&image_name=<?php echo $image_name; ?>" class="btn-danger">Delete Category</a>
                                 </td>
                             </tr>
 
@@ -151,5 +205,13 @@
             </table>
     </div>
 </div>
-
-<?php include('partials/footer.php');?>
+<!--footer sec starts-->
+    <div class="footer">
+        <div class="menu">
+        <div class="wrapper">
+        <p class="text-center">2021 All rights reserved.</p>
+        </div>
+    </div>
+    <!--footer sec ends-->
+</body>
+</html>
