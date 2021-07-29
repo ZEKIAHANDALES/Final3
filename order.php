@@ -17,6 +17,29 @@ $query_builder = TRUE;
 // Connect to DB
 $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
 ?>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>zaxuun admin</title>
+    <link rel="stylesheet" type="text/css" href="../css/admin.css">
+</head>
+<body>
+    <!--menu section starts-->
+    <div class="menu text-center">
+        <div class="wrapper">
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="manage-admin.php">Admin</a></li>
+                <li><a href="manage-category.php">Category</a></li>
+                <li><a href="manage-food.php">Food</a></li>
+                <li><a href="manage-order.php">Order</a></li>
+                <li><a href="logout.php">Log Out</a></li>
+            </ul>
+        </div>
+        
+    </div>
+    <!--menu section ends-->
     <!-- Navbar Section Ends Here -->
 
 
@@ -39,13 +62,13 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
             }
             else
             {
-                header('location:'.SITEURL);
+                header('location: indexwelcome.php');
             }
 
         }
         else
         {
-            header('location:'.SITEURL);
+            header('location:indexwelcome.php');
         }
 
     ?>
@@ -149,13 +172,13 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                     {
                         $_SESSION['order'] = "<div class='success text-center'>Order Placed Successfully</div>";
 
-                            header('location:'.SITEURL);
+                            header('location:indexwelcome.php');
                     }
                     else
                     {   
                         $_SESSION['order'] = "<div class='error text-center'>Order failed</div>";
 
-                            header('location:'.SITEURL);
+                            header('location: indexwelcome.php');
                     }
 
                 }                
