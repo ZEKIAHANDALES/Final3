@@ -18,6 +18,19 @@ $query_builder = TRUE;
 $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
 ?>
 
+<?php 
+
+    //auth access control
+    if(!isset($_SESSION['user']))
+    {
+
+        $_SESSION['no-login-message'] = "<div class='error text-center'> Please Login to access </div>";
+        header('location: login.php');
+
+    }
+
+?>
+
 <html>
 <head>
     <meta charset="utf-8">
@@ -40,18 +53,6 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
         
     </div>
     <!--menu section ends-->
-<?php 
-
-    //auth access control
-    if(!isset($_SESSION['user']))
-    {
-
-        $_SESSION['no-login-message'] = "<div class='error text-center'> Please Login to access </div>";
-        header('admin/login.php');
-
-    }
-
-?>
 
 <div class="main-content">
     <div class="wrapper">
@@ -213,7 +214,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
 
                         $_SESSION['upload'] = "<div class='error'>
                         Failed to upload image </div>";
-                        header('admin/add-food.php');
+                        header('location: add-food.php');
                         die();
                        }
 
@@ -240,13 +241,13 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                 {
                     $_SESSION['add'] = "<div class='success'>
                         Food added successfully </div>";
-                    header('admin/manage-food.php');
+                    header('location: manage-food.php');
                 }
                 else
                 {
                     $_SESSION['add'] = "<div class='error'>
                         Failed to add food </div>";
-                    header('admin/manage-food.php');
+                    header('location: manage-food.php');
                 }
             }
             
