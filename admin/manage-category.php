@@ -101,7 +101,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
 
         <br><br>
 
-         <a href="admin/add-category.php" class="btn-primary">Add Category </a>
+         <a href="add-category.php" class="btn-primary">Add Category </a>
                 <table class="tbl-full">
 
                 <br/><br/><br>
@@ -173,8 +173,8 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                                 <td><?php echo $active; ?></td>
 
                                 <td>
-                                    <a href="admin/update-category.php?id=<?php echo $id; ?>"class="btn-secondary">Update Category</a>
-                                    <a href="admin/delete-category.php?id=<?php echo $id; ?>&image_name=<?php echo $image_name; ?>" class="btn-danger">Delete Category</a>
+                                    <a href="update-category.php?id=<?php echo $id; ?>"class="btn-secondary">Update Category</a>
+                                    <a href="delete-category.php?id=<?php echo $id; ?>&image_name=<?php echo $image_name; ?>" class="btn-danger">Delete Category</a>
                                 </td>
                             </tr>
 
