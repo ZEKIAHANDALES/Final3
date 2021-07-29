@@ -25,7 +25,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
     {
 
         $_SESSION['no-login-message'] = "<div class='error text-center'> Please Login to access </div>";
-        header('location:admin/login.php');
+        header('location' .$login.php);
 
     }
 
@@ -96,13 +96,13 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
             $_SESSION['login'] = "<div class='success'>Login Successful.</div>";
             $_SESSION['user'] = $username;
 
-            header('location:admin/index.php');
+            header('location:' .$index.php);
 
         }
         else
         {
             $_SESSION['login'] = "<div class='error'>User could not be found.</div>";
-            header('location:admin/login.php');
+            header('location:' .$login.php);
         }
 
     }
