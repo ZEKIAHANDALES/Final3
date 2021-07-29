@@ -34,7 +34,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
 
         if ($image_name != "") 
         {
-            $path = "../img/food/".$image_name;
+            $path = "../img/food".$image_name;
             $remove = unlink($path);
 
             if ($remove==false) 
