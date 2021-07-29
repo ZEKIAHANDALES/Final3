@@ -25,7 +25,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
     {
 
         $_SESSION['no-login-message'] = "<div class='error text-center'> Please Login to access </div>";
-        header('location: admin/login.php');
+        header('location: login.php');
 
     }
 
@@ -145,7 +145,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                                 <td><?php echo $customer_table; ?></td>
                                 <td><?php echo $customer_suggestions; ?></td>
                                 <td>
-                                    <a href="admin/update-order.php?id=<?php echo $id;?>"class="btn-secondary">Update Order</a>
+                                    <a href="update-order.php?id=<?php echo $id;?>"class="btn-secondary">Update Order</a>
                                 </td>
                             </tr>
 
