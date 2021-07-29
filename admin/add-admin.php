@@ -25,7 +25,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
     {
 
         $_SESSION['no-login-message'] = "<div class='error text-center'> Please Login to access </div>";
-        header('admin/login.php');
+        header('location: login.php');
     }
 
 ?>
@@ -146,13 +146,13 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
             //session var to disp message
             $_SESSION['add'] = "Admin added successfully";
             //redirect to MAdmin
-            header('admin/manage-admin.php');
+            header('location: manage-admin.php');
         }
         else
         {
             $_SESSION['add'] = "Failed to add admin";
             //redirect to addAdmin
-            header('admin/add-admin.php');
+            header('location: add-admin.php');
             
         }
 
