@@ -25,7 +25,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
     {
 
         $_SESSION['no-login-message'] = "<div class='error text-center'> Please Login to access </div>";
-        header('location: admin/login.php');
+        header('location: login.php');
 
     }
 
@@ -62,7 +62,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
             <br><br>
                 <!--btn add admin -->
 
-                <a href="admin/add-food.php" class="btn-primary">Add Food</a>
+                <a href="add-food.php" class="btn-primary">Add Food</a>
                 <table class="tbl-full">
                     
             <br><br>
@@ -160,8 +160,8 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                                 <td><?php echo $featured; ?></td>
                                 <td><?php echo $active; ?></td>
                                 <td>
-                                    <a href="admin/update-food.php?id=<?php echo $id; ?>"class="btn-secondary">Update Food</a>
-                                    <a href="admin/delete-food.php?id=<?php echo $id; ?>&image_name=<?php echo $image_name; ?>"class="btn-danger">Delete Food</a>
+                                    <a href="update-food.php?id=<?php echo $id; ?>"class="btn-secondary">Update Food</a>
+                                    <a href="delete-food.php?id=<?php echo $id; ?>&image_name=<?php echo $image_name; ?>"class="btn-danger">Delete Food</a>
                                 </td>
                             </tr>
 
