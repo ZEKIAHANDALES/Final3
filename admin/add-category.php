@@ -180,7 +180,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                 $image_name = "zax_food_".rand(000, 999).'.'.$ext;
 
                 $source_path = $_FILES['image']['tmp_name'];
-                $destination_path = "../img/category".$image_name;
+                $destination_path = "../img/category/".$image_name;
 
                 $upload = move_uploaded_file($source_path, $destination_path);
 
