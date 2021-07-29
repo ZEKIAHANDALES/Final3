@@ -212,7 +212,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                          if ($remove==false) 
                     {
                         $_SESSION['failed-remove'] = "<div class='error'> Failed to remove currrent image </div>";
-                        header('location: admin/manage-category.php');
+                        header('location: manage-category.php');
                         die();
                     }
 
