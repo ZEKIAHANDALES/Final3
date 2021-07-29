@@ -18,6 +18,19 @@ $query_builder = TRUE;
 $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
 ?>
 
+<?php 
+
+    //auth access control
+    if(!isset($_SESSION['user']))
+    {
+
+        $_SESSION['no-login-message'] = "<div class='error text-center'> Please Login to access </div>";
+        header('location: login.php');
+
+    }
+
+?>
+
 <html>
 <head>
     <meta charset="utf-8">
@@ -48,7 +61,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
     {
 
         $_SESSION['no-login-message'] = "<div class='error text-center'> Please Login to access </div>";
-        header('admin/login.php');
+        header('location: login.php');
 
     }
 
@@ -216,14 +229,14 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
 
                 $_SESSION['add'] = "<div class='success'>Category added successfully.</div>";
 
-                header('admin/manage-category.php');
+                header('location: manage-category.php');
 
             }
             else
             {
                 $_SESSION['add'] = "<div class='error'>Failed to add category </div>";
 
-                header('admin/add-category.php');
+                header('location: add-category.php');
 
 
             }  
