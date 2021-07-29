@@ -17,6 +17,45 @@ $query_builder = TRUE;
 // Connect to DB
 $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
 ?>
+
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="utf-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZAXXUN ROBOT CAFE</title>
+
+    <!-- link our css file -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar Section Starts Here -->
+    <section class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="img/robot.jpg" alt="Zaxxun Logo" class="img-responsive">
+            </div>
+
+            <div class="menu text-right">
+                <ul>
+                    <li>
+                        <a href="indexwelcome.php">Home</a>
+                    </li>
+                    <li>
+                        <a href="categories.php">Categories</a>
+                    </li>
+
+                    <li>
+                        <a href="foods.php">Featured</a>
+                    </li>
+
+                </ul>       
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    </section>
+    <!-- Navbar Section Ends Here -->
     <!-- Navbar Section Ends Here -->
 
     <!-- fOOD sEARCH Section Starts Here -->
@@ -126,4 +165,30 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
     </section>
     <!-- fOOD Menu Section Ends Here -->
 
- ?>
+ <section class="social">
+        <div class="container text-center">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/zaxxunorg/"><img src="https://img.icons8.com/cute-clipart/64/000000/facebook-new.png"/></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/zaxxun/"><img src="https://img.icons8.com/cute-clipart/64/000000/instagram-new.png"/></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/zaxxun"><img src="https://img.icons8.com/cute-clipart/64/000000/twitter.png"/></a>
+                </li>   
+            </ul>
+        </div>
+    </section>
+    <!-- Social Section Ends Here -->
+
+    <!-- Footer Section Starts Here -->
+    <section class="footer">
+        <div class="container text-center">
+            <p>All rights reserved.</p>
+        </div>
+    </section>
+    <!-- Footer Search Section Ends Here -->
+
+</body>
+</html>
