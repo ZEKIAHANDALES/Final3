@@ -17,9 +17,6 @@ $active_group = 'default';
 $query_builder = TRUE;
 // Connect to DB
 $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
-?>
-
-<?php 
 
     //auth access control
     if(!isset($_SESSION['user']))
@@ -29,8 +26,6 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
         header('location: login.php');
 
     }
-
-?>
    
    $id = $_GET['id'];
 
