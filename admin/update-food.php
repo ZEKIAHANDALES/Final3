@@ -136,7 +136,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                         {
                            
                             ?>
-                            <img src="img/food/<?php echo $current_image; ?>"width="150px">
+                            <img src="../img/food/<?php echo $current_image; ?>"width="150px">
                             <?php
 
                         }
