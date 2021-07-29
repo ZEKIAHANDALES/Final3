@@ -26,6 +26,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
 
         $_SESSION['no-login-message'] = "<div class='error text-center'> Please Login to access </div>";
         echo "<script>window.location.href='login.php'</script>";
+        die();
         
 
     }
@@ -75,7 +76,8 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
 
         <p class="text-center">All Rights Reserved.</p>
     </div>
-
+</body>
+</html>
 <!-- Method Here -->
 
 <?php 
@@ -97,15 +99,16 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
             $_SESSION['user'] = $username;
 
             echo "<script>window.location.href='index.php'</script>";
+            die();
 
         }
         else
         {
             $_SESSION['login'] = "<div class='error'>User could not be found.</div>";
             echo "<script>window.location.href='login.php'</script>";
+            die();
         }
 
     }
 ?>
-</body>
-</html>
+
