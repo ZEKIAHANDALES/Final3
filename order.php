@@ -18,28 +18,43 @@ $query_builder = TRUE;
 $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
 ?>
 
-<html>
+<!DOCTYPE html>
+<html lang = "en">
 <head>
     <meta charset="utf-8">
-    <title>zaxuun admin</title>
-    <link rel="stylesheet" type="text/css" href="../css/admin.css">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZAXXUN ROBOT CAFE</title>
+
+    <!-- link our css file -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!--menu section starts-->
-    <div class="menu text-center">
-        <div class="wrapper">
-            <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="manage-admin.php">Admin</a></li>
-                <li><a href="manage-category.php">Category</a></li>
-                <li><a href="manage-food.php">Food</a></li>
-                <li><a href="manage-order.php">Order</a></li>
-                <li><a href="logout.php">Log Out</a></li>
-            </ul>
+    <!-- Navbar Section Starts Here -->
+    <section class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="img/robot.jpg" alt="Zaxxun Logo" class="img-responsive">
+            </div>
+
+            <div class="menu text-right">
+                <ul>
+                    <li>
+                        <a href="indexwelcome.php">Home</a>
+                    </li>
+                    <li>
+                        <a href="categories.php">Categories</a>
+                    </li>
+
+                    <li>
+                        <a href="foods.php">Featured</a>
+                    </li>
+
+                </ul>       
+            </div>
+
+            <div class="clearfix"></div>
         </div>
-        
-    </div>
-    <!--menu section ends-->
+    </section>
     <!-- Navbar Section Ends Here -->
 
 
@@ -214,6 +229,6 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
         </div>
     </section>
     <!-- Footer Search Section Ends Here -->
-	
+
 </body>
 </html>
