@@ -136,7 +136,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                         {
                            
                             ?>
-                            <img src="../img/food/<?php echo $current_image; ?>"width="150px">
+                            <img src="../img/food<?php echo $current_image; ?>"width="150px">
                             <?php
 
                         }
@@ -249,7 +249,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                 $image_name = "zaxxun_food_".rand(000, 999).'.'.$ext;
 
                 $source_path = $_FILES['image']['tmp_name'];
-                $destination_path = "../img/food/".$image_name;
+                $destination_path = "../img/food".$image_name;
 
                 $upload = move_uploaded_file($source_path, $destination_path);
 
@@ -262,7 +262,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                 }
                     if($current_image != "")
                     {
-                     $remove_path = "../img/food/".$current_image;
+                     $remove_path = "../img/food".$current_image;
                          $remove = unlink($remove_path);
 
                          if ($remove==false) 
