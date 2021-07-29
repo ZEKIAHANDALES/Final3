@@ -149,9 +149,9 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                                 <td><?php echo $full_name; ?></td>
                                 <td><?php echo $username; ?></td>
                                 <td>
-                                    <a href="admin/update-password.php?id=<?php echo $id; ?>" class="btn-primary">Change Password</a>
-                                    <a href="admin/update-admin.php?id=<?php echo $id; ?>"class="btn-secondary">Update Admin</a>
-                                    <a href="admin/delete-admin.php?id=<?php echo $id; ?>"class="btn-danger">Delete Admin</a>
+                                    <a href="update-password.php?id=<?php echo $id; ?>" class="btn-primary">Change Password</a>
+                                    <a href="update-admin.php?id=<?php echo $id; ?>"class="btn-secondary">Update Admin</a>
+                                    <a href="delete-admin.php?id=<?php echo $id; ?>"class="btn-danger">Delete Admin</a>
                                 </td>
                             </tr>
 
