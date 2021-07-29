@@ -118,7 +118,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                         {
                            
                             ?>
-                            <img src=" img/category/<?php echo $current_image; ?>"width="150px">
+                            <img src=" img/category<?php echo $current_image; ?>"width="150px">
                             <?php
 
                         }
@@ -206,7 +206,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                 }
                     if($current_image != "")
                     {
-                     $remove_path = "../img/category/".$current_image;
+                     $remove_path = "../img/category".$current_image;
                          $remove = unlink($remove_path);
 
                          if ($remove==false) 
