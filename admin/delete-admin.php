@@ -41,12 +41,12 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
    if($res==true)
    {
         $_SESSION['delete'] = "<div class='success'>Admin Deleted Successfully.</div>";
-        header(.'admin/manage-admin.php');
+        header('location: manage-admin.php');
    }
    else
    {
-        $_SESSION['delete'] = "<div class='error'>Failed to delete admin</div>";
-        header('admin/manage-admin.php');
+        $_SESSION['delete'] = "<div class='error'>Failed to Delete Admin</div>";
+        header('location: manage-admin.php');
    }
 
 ?>
