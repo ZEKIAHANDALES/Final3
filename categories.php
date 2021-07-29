@@ -17,6 +17,44 @@ $query_builder = TRUE;
 // Connect to DB
 $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
 ?>
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="utf-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZAXXUN ROBOT CAFE</title>
+
+    <!-- link our css file -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar Section Starts Here -->
+    <section class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="img/robot.jpg" alt="Zaxxun Logo" class="img-responsive">
+            </div>
+
+            <div class="menu text-right">
+                <ul>
+                    <li>
+                        <a href="indexwelcome.php">Home</a>
+                    </li>
+                    <li>
+                        <a href="categories.php">Categories</a>
+                    </li>
+
+                    <li>
+                        <a href="foods.php">Featured</a>
+                    </li>
+
+                </ul>       
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    </section>
+    <!-- Navbar Section Ends Here -->
 
 
     <!-- CAtegories Section Starts Here -->
