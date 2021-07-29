@@ -20,6 +20,6 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
     session_destroy();
 
 
-    header('location: admin/login.php');
+    header('location: login.php');
 
  ?>
