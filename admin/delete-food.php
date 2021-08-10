@@ -37,7 +37,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
             //$path = "../img/food/".$image_name;
             //$remove = unlink($path);
 
-            if ($remove==false) 
+           // if ($remove==false) 
             //{
               //  $_SESSION['remove'] = "<div class='error'>Failed to remove Food Image </div>";  
 
