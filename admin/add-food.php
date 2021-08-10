@@ -205,9 +205,9 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
 
                        $src = $_FILES['image']['tmp_name'];
 
-                    
-
-                       $upload = move_uploaded_file($src);
+                       $dst = "../img/food/".$image_name;
+    
+                       $upload = move_uploaded_file($src, $dst);
 
                        if($upload==false)
                        {
