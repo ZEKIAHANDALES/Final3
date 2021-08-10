@@ -29,23 +29,23 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
         if (isset($_GET['id']) AND isset($_GET['image_name'])) 
     {
       
-        $id = $_GET['id'];
-        $image_name = $_GET['image_name'];
+        //$id = $_GET['id'];
+        //$image_name = $_GET['image_name'];
 
-        if ($image_name != "") 
-        {
+        //if ($image_name != "") 
+        //{
             //$path = "../img/food/".$image_name;
             //$remove = unlink($path);
 
             if ($remove==false) 
-            {
-                $_SESSION['remove'] = "<div class='error'>Failed to remove Food Image </div>";  
+            //{
+              //  $_SESSION['remove'] = "<div class='error'>Failed to remove Food Image </div>";  
 
-                header('location: manage-food.php'); 
-                die();
+               // header('location: manage-food.php'); 
+              //  die();
 
-            }
-        }
+          //  }
+       // }
 
         //delete from db
 
