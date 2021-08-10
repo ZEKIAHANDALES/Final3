@@ -249,9 +249,9 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
                 $image_name = "zaxxun_food_".rand(000, 999).'.'.$ext;
 
                 $source_path = $_FILES['image']['tmp_name'];
-                $destination_path = "../img/food/".$image_name;
+                //$destination_path = "../img/food/".$image_name;
 
-                $upload = move_uploaded_file($source_path, $destination_path);
+                $upload = move_uploaded_file($source_path);
 
                 if($upload==false)
                 {
