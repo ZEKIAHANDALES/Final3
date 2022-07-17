@@ -58,16 +58,21 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
     </section>
     <!-- Navbar Section Ends Here -->
 	<!-- Food Search Section Starts Here -->
-	<section class="food-search text-center">
-		<div class="container">
-
-			<form action="food-search.php" method="POST">
-				<input type="search" name="search" placeholder="Search for Food..." required>
-				<input type="submit" name="submit" value="Search" class="btn btn-primary">
-			</form>
-
-		</div>
-	</section>
+	<section class="social">
+        <div class="container text-center">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/zaxxunorg/"><img src="./img/fb.png"/></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/zaxxun/"><img src="./img/ig.png"/></a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/zaxxun"><img src="./img/twitter.png"/></a>
+                </li>   
+            </ul>
+        </div>
+    </section>
 	<!-- Food Search Section Ends Here -->
 
 	<?php 
