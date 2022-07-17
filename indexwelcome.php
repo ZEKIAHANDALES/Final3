@@ -63,7 +63,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
 
 			<form action="food-search.php" method="POST">
 				<input type="search" name="search" placeholder="Search for Food..." required>
-				<input type="submit" name="submit" value="search" class="btn btn-primary">
+				<input type="submit" name="submit" value="Search" class="btn btn-primary">
 			</form>
 
 		</div>

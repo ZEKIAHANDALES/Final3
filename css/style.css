@@ -64,14 +64,6 @@ h2{
 	font-size: 2rem;
 }
 
-h2:first-child{
-	color: #dadada;
-}
-
-h2:nth-child(2){
-	color: #1f1f1f
-}
-
 h3{
 	font-size: 1.5rem;
 }
@@ -146,7 +138,11 @@ fieldset{
 /* CSS for categories section*/
 .categories{
 	padding: 4% 0;
-	background-color: #4a4a4a;
+	background-color: #fff;
+}
+
+.categories div h2{
+	color: #dadada
 }
 
 .box-3{
@@ -161,6 +157,11 @@ fieldset{
 	background-image: url(../img/bg.jpg);
 	padding: 4%;
 }
+
+.food-menu div h2{
+	color: #000;
+}
+
 .food-menu-box{
 	width: 28%;
 	margin: 1%;
