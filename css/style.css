@@ -61,8 +61,15 @@ a:hover{
 }
 
 h2{
-	color: black;
 	font-size: 2rem;
+}
+
+h2:first-child{
+	color: #dadada;
+}
+
+h2:nth-child(2){
+	color: #1f1f1f
 }
 
 h3{
@@ -139,6 +146,7 @@ fieldset{
 /* CSS for categories section*/
 .categories{
 	padding: 4% 0;
+	background-color: #4a4a4a;
 }
 
 .box-3{
@@ -180,6 +188,10 @@ fieldset{
 
 /* CSS for social section*/
 
+.social{
+	background-color: #4a4a4a;
+}
+
 .social ul{
 	list-style-type: none;
 }
@@ -189,6 +201,14 @@ fieldset{
 	padding: 1%;
 }
 
+/* CSS for footer */
+.footer{
+	background-color: #1f1f1f;
+}
+
+.footer p{
+	color: white;
+}
 
 /* CSS for mobile size or smaller screen*/
 
