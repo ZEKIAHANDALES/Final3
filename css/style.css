@@ -61,11 +61,12 @@ a:hover{
 }
 
 h2{
-	color: #2f3542;
+	color: black;
 	font-size: 2rem;
 }
 
 h3{
+	background-color: rgba(255,255,255,0.75);
 	font-size: 1.5rem;
 }
 

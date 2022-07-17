@@ -237,7 +237,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
     <!-- Footer Section Starts Here -->
     <section class="footer">
         <div class="container text-center">
-            <p>All rights reserved.</p>
+            <p>All rights reserved ©.</p>
         </div>
     </section>
     <!-- Footer Search Section Ends Here -->
