@@ -201,6 +201,10 @@ fieldset{
 	padding: 1%;
 }
 
+.social ul li a img{
+	height: 64px;
+}
+
 /* CSS for footer */
 .footer{
 	background-color: #1f1f1f;
