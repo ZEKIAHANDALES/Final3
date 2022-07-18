@@ -88,6 +88,7 @@ fieldset{
 .error{
 	padding: 2%;
 	color: red;
+	font-weight: bold;
 }
 .success{
 	padding: 2%;
