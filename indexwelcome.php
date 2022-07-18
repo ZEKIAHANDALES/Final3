@@ -203,7 +203,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
 	}
 	else
 	{
-		echo "<div class='error'> Food not Available </div>";
+		echo "<div class='error'> Food is currently unavailable. Please try again later. </div>";
 	}
 
 	?>
