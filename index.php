@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 	<html>
 	<head>
-		<title>ZAXXUN ROBOT CAFE</title>
+		<title>Zaxxun Robot Cafe</title>
 		<meta charset="utf-8">
 		<title></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +9,10 @@
 	</head>
 	<body>
 		<div class="header">
-			<h1>Zaxxun Robot Cafe</h1>
+			<img src="img/logo.jpg" alt="Zaxxun Logo" class="img-responsive">
 		</div>
 		<div class="greetings">
-			<p1> Welcome! </p1>
+			<p1> Welcome to Zaxxun Robot Cafe </p1>
 		</div>
 
 	<div class="bttncenter">

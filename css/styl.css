@@ -5,19 +5,24 @@
 body {
 	background-image: url("../img/bgrnd.jpg");
 	background-repeat: no-repeat;
+  background-size: cover;
 }
 .header {
-	padding: 60px;
+	padding: 40px;
 	text-align: center;
-	background-color: green;
+	background-color: #1f1f1f;
 	color: white;
-	font-size: auto ;
+	font-size: auto;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .greetings  {
-	padding-top: 30px;
+	padding-top: 10px;
+  padding-bottom: 10px;
 	text-align: center;
 	color: whitesmoke;
 	font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
 	border: solid;
     border-color: black;
     border-radius: 15px;
@@ -40,7 +45,7 @@ body {
   text-decoration: none;
   outline: none;
   color: #fff;
-  background-color: #4CAF50;
+  background-color: #01aaac;
   border: solid;
   border-color: black;
   border-radius: 15px;
@@ -48,10 +53,10 @@ body {
   
 }
 
-.button:hover {background-color: #3e8e41}
+.button:hover {background-color: #080ba3}
 
 .button:active {
-  background-color: #3e8e41;
+  background-color: #01aaac;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }

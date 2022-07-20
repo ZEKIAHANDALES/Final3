@@ -168,13 +168,13 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
         <div class="container text-center">
             <ul>
                 <li>
-                    <a href="https://www.facebook.com/zaxxunorg/"><img src="https://img.icons8.com/cute-clipart/64/000000/facebook-new.png"/></a>
+                    <a href="https://www.facebook.com/zaxxunorg/"><img src="./img/fb.png"/></a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/zaxxun/"><img src="https://img.icons8.com/cute-clipart/64/000000/instagram-new.png"/></a>
+                    <a href="https://www.instagram.com/zaxxun/"><img src="./img/ig.png"/></a>
                 </li>
                 <li>
-                    <a href="https://twitter.com/zaxxun"><img src="https://img.icons8.com/cute-clipart/64/000000/twitter.png"/></a>
+                    <a href="https://twitter.com/zaxxun"><img src="./img/twitter.png"/></a>
                 </li>   
             </ul>
         </div>
