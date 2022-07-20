@@ -1,9 +1,10 @@
 * {
 	margin: 0;
 	padding: 0;
+	font-family: Arial, Helvetica, sans-serif;
 }
 body {
-	background-image: url("../img/bgrnd.jpg");
+	background-image: url("img/bgrnd.jpg");
 	background-repeat: no-repeat;
   background-size: cover;
 }
@@ -13,15 +14,13 @@ body {
 	background-color: #1f1f1f;
 	color: white;
 	font-size: auto;
-  font-family: Arial, Helvetica, sans-serif;
 }
 .greetings  {
-	padding-top: 10px;
-  padding-bottom: 10px;
+	padding-top: 5px;
+  padding-bottom: 5px;
 	text-align: center;
 	color: whitesmoke;
 	font-size: 40px;
-  font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
 	border: solid;
     border-color: black;
