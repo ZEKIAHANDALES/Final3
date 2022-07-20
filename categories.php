@@ -32,7 +32,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
     <section class="navbar">
         <div class="container">
             <div class="logo">
-                <img src="img/robot.jpg" alt="Zaxxun Logo" class="img-responsive">
+                <img src="img/logo.png" alt="Zaxxun Logo" class="img-responsive">
             </div>
 
             <div class="menu text-right">
