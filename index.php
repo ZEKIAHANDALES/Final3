@@ -9,7 +9,7 @@
 	</head>
 	<body>
 		<div class="header">
-			<img src="img/logo.jpg" alt="Zaxxun Logo" class="img-responsive">
+			<img src="img/logo.png" alt="Zaxxun Logo" class="img-responsive">
 		</div>
 		<div class="greetings">
 			<p1> Welcome to Zaxxun Robot Cafe </p1>
