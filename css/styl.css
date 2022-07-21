@@ -4,22 +4,25 @@
 	font-family: Arial, Helvetica, sans-serif;
 }
 body {
-	background-image: url("img/bgrnd.jpg");
+	background-image: url("/img/bg1.jpg");
 	background-repeat: no-repeat;
   background-size: cover;
 }
 .header {
-	padding: 40px;
+	padding: 10px;
 	text-align: center;
 	background-color: #1f1f1f;
 	color: white;
 	font-size: auto;
 }
+.header img{
+  width: 70%;
+}
 .greetings  {
-	padding-top: 5px;
-  padding-bottom: 5px;
+  background-color: white;
+	padding: 5px;
 	text-align: center;
-	color: whitesmoke;
+	color: black;
 	font-size: 40px;
   font-weight: bolder;
 	border: solid;
