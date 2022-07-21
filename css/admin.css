@@ -15,6 +15,10 @@ body{
 	background-color: #1f1f1f;
 }
 
+input{
+	color: black;
+}
+
 .wrapper{
 	padding: 1%;
 	width: 80% ;
@@ -131,6 +135,7 @@ table tr td{
 	margin:  2%;
 	padding: 2%;
 	float: left;
+	color: black;
 }
 
 /* css footer */
