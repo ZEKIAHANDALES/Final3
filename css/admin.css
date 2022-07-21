@@ -8,6 +8,7 @@
 	margin: 0;
 	padding: 0;
 	font-family: Arial, Helvetica, sans-serif;
+	color: white;
 }
 
 body{
@@ -22,6 +23,7 @@ body{
 
 .text-center{
 	text-align: center;
+	color: white;
 }
 
 .clearfix{
@@ -119,7 +121,7 @@ table tr td{
 /* css main C. */
 
 .main-content {
-	background-color: lightgrey;
+	background-color: #1f1f1f;
 	padding-top: 3%;
 }
 
