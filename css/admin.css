@@ -10,6 +10,10 @@
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+body{
+	background-color: #1f1f1f;
+}
+
 .wrapper{
 	padding: 1%;
 	width: 80% ;
@@ -44,7 +48,7 @@ table tr td{
 }
 
 .btn-primary{
-	background-color: blueviolet;
+	background-color: #01aaac;
 	padding: 1%;
 	color: whitesmoke;
 	text-decoration: none;
@@ -52,11 +56,11 @@ table tr td{
 }
 
 .btn-primary:hover{
-	background-color: green;
+	background-color: #080ba3;
 }
 
 .btn-secondary{
-	background-color: green;
+	background-color: #01aaac;
 	padding: 1%;
 	color: whitesmoke;
 	text-decoration: none;
@@ -64,7 +68,7 @@ table tr td{
 }
 
 .btn-secondary:hover{
-	background-color: yellow;
+	background-color: #080ba3;
 }
 
 .btn-danger{
@@ -91,6 +95,7 @@ table tr td{
 
 .menu {
 	border-bottom: 1px solid;
+	background-color: #1f1f1f;
 }
 
 .menu ul{
@@ -104,11 +109,11 @@ table tr td{
 .menu ul li a{
 	text-decoration: none;
 	font-weight: bold;
-	color: black;
+	color: white;
 }
 
 .menu ul li a:hover{
-	color:  green;
+	color:  #080ba3;
 }
 
 /* css main C. */
@@ -129,7 +134,7 @@ table tr td{
 /* css footer */
 
 .footer{
-	background-color: green;
+	background-color: #01aaac;
 	color: white;
 }
 
