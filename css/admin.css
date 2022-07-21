@@ -122,11 +122,14 @@ table tr td{
 	color:  #080ba3;
 }
 
+
+
 /* css main C. */
 
 .main-content {
 	background-color: #1f1f1f;
 	padding-top: 3%;
+	color: white;
 }
 
 .col-4{
