@@ -116,7 +116,7 @@ fieldset{
 
 .menu ul li{
 	display: inline;
-	padding: 3%;
+	padding: 1%;
 	font-weight: bold;
 }
 
@@ -229,6 +229,10 @@ fieldset{
 	.menu ul{
 		text-align: center;
 	}
+	
+	.menu ul li{
+		padding: 3%;
+	}	
 
 	.food-search input[type="search"]{
 		width: 90%;
